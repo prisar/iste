@@ -46,28 +46,12 @@ fun Greeting(name: String) {
             contentDescription = "train",
         modifier = Modifier.fillMaxWidth()
             .padding(10.dp)
-//            .align(Alignment.Center) // keep the image centralized into the Box
-//            .graphicsLayer(
-//                // adding some zoom limits (min 50%, max 200%)
-//                scaleX = maxOf(.5f, minOf(3f, scale.value)),
-//                scaleY = maxOf(.5f, minOf(3f, scale.value)),
-//                rotationZ = rotationState.value
-//            )
-
         )
         Image(
             painter = painterResource(id = R.drawable.hq720),
             contentDescription = "train",
         modifier = Modifier.fillMaxWidth()
             .padding(10.dp)
-//            .align(Alignment.Center) // keep the image centralized into the Box
-//            .graphicsLayer(
-//                // adding some zoom limits (min 50%, max 200%)
-//                scaleX = maxOf(.5f, minOf(3f, scale.value)),
-//                scaleY = maxOf(.5f, minOf(3f, scale.value)),
-//                rotationZ = rotationState.value
-//            )
-
         )
     }
 
