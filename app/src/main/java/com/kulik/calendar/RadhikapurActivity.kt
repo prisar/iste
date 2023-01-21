@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
 //import androidx.compose.foundation.layout.BoxScopeInstance.align
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -16,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.kulik.calendar.ui.theme.IsteTheme
 
 class RadhikapurActivity : ComponentActivity() {
@@ -37,11 +37,15 @@ class RadhikapurActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    
-    Image(
-        painter = painterResource(id = R.drawable.hq720),
-        contentDescription = "train",
-//        modifier = Modifier.fillMaxWidth()
+    Column(
+        modifier = Modifier.fillMaxWidth() ,
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally) {
+        Image(
+            painter = painterResource(id = R.drawable.hq720),
+            contentDescription = "train",
+        modifier = Modifier.fillMaxWidth()
+            .padding(10.dp)
 //            .align(Alignment.Center) // keep the image centralized into the Box
 //            .graphicsLayer(
 //                // adding some zoom limits (min 50%, max 200%)
@@ -50,7 +54,23 @@ fun Greeting(name: String) {
 //                rotationZ = rotationState.value
 //            )
 
-    )
+        )
+        Image(
+            painter = painterResource(id = R.drawable.hq720),
+            contentDescription = "train",
+        modifier = Modifier.fillMaxWidth()
+            .padding(10.dp)
+//            .align(Alignment.Center) // keep the image centralized into the Box
+//            .graphicsLayer(
+//                // adding some zoom limits (min 50%, max 200%)
+//                scaleX = maxOf(.5f, minOf(3f, scale.value)),
+//                scaleY = maxOf(.5f, minOf(3f, scale.value)),
+//                rotationZ = rotationState.value
+//            )
+
+        )
+    }
+
 }
 
 @Preview(showBackground = true)
