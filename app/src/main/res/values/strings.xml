@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">iste</string>
+    <string name="title_activity_radhikapur">RadhikapurActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
 </resources>
