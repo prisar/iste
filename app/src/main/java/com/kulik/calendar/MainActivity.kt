@@ -87,7 +87,7 @@ fun Home() {
     var enabled = true
     val context = LocalContext.current
 
-    Column (verticalArrangement= Arrangement.SpaceBetween) {
+    Column (verticalArrangement= Arrangement.Center) {
         Text(
             text = "Calendar",
             style = TextStyle(
@@ -106,6 +106,31 @@ fun Home() {
                     // onCLick()
                     context.startActivity(
                         Intent(context, CalendarActivity::class.java).putExtra(
+                            "url",
+                            "https://agrohikulik.web.app/raiganj_06/basudebpur_115/MouzaMap.html"
+                        )
+                    )
+                },
+        )
+
+        Text(
+            text = "Radhikapur",
+            style = TextStyle(
+                color = Black,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            ),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+                .border(2.dp, Black, shape)
+                .background(Teal200, shape)
+                .padding(16.dp)
+                .clickable(enabled = enabled) {
+                    enabled = false
+                    // onCLick()
+                    context.startActivity(
+                        Intent(context, RadhikapurActivity::class.java).putExtra(
                             "url",
                             "https://agrohikulik.web.app/raiganj_06/basudebpur_115/MouzaMap.html"
                         )
