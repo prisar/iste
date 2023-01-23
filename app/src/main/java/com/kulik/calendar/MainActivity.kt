@@ -125,6 +125,8 @@ fun Home() {
                     )
                 },
         )
+        
+        Text(text = "Nearest major stations are Barsoi and Katihar Jn where all kinds of trains are available. Even Vande Bharat Express!")
     }
 }
 
