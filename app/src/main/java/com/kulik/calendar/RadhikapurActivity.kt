@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.Divider
 //import androidx.compose.foundation.layout.BoxScopeInstance.align
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -44,7 +45,8 @@ fun Greeting(name: String) {
         Image(
             painter = painterResource(id = R.drawable.hq720),
             contentDescription = "train",
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
             .padding(10.dp)
         )
 
@@ -55,6 +57,9 @@ fun Greeting(name: String) {
         Text("Radhikapur - Telta DEMU: 1:00 pm")
         Text("Radhikapur - Katihar Passenger: 6:30 pm")
         Text("Radhikapur - Kolkata Express: 10:30 am")
+
+        Divider()
+        Text("For outsiders new to radhikapur, there are hotels in kaliyaganj where you can stay")
     }
 
 }
