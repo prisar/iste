@@ -47,12 +47,14 @@ fun Greeting(name: String) {
         modifier = Modifier.fillMaxWidth()
             .padding(10.dp)
         )
-        Image(
-            painter = painterResource(id = R.drawable.hq720),
-            contentDescription = "train",
-        modifier = Modifier.fillMaxWidth()
-            .padding(10.dp)
-        )
+
+        Text("Radhikapur - Katihar Passenger: 4:45 am")
+        Text("Radhikapur - Howrah Jn Kulik Express: 5:45 am")
+        Text("Radhikapur - Siliguri DEMU: 6:15 am")
+        Text("Radhikapur - Katihar Passenger: 10:30 am")
+        Text("Radhikapur - Telta DEMU: 1:00 pm")
+        Text("Radhikapur - Katihar Passenger: 6:30 pm")
+        Text("Radhikapur - Kolkata Express: 10:30 am")
     }
 
 }

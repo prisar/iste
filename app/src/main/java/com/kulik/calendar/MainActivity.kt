@@ -48,40 +48,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun CalenderDisplay() {
-    var backEnabled by remember { mutableStateOf(false) }
-    var webView: WebView? = null
-    val url = "https://agrohikulik.web.app/calender.html"
-
-    Text("hi", modifier = Modifier.padding(10.dp))
-    AndroidView(
-        modifier = Modifier.fillMaxSize(),
-        factory = { context ->
-            WebView(context).apply {
-                layoutParams = ViewGroup.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT,
-                    ViewGroup.LayoutParams.MATCH_PARENT
-                )
-                webViewClient = object : WebViewClient() {
-                    override fun onPageStarted(view: WebView, url: String?, favicon: Bitmap?) {
-                        backEnabled = view.canGoBack()
-                    }
-                }
-                settings.javaScriptEnabled = true
-
-                loadUrl(url)
-                webView = this
-            }
-        }, update = {
-            webView = it
-        })
-
-    BackHandler(enabled = backEnabled) {
-        webView?.goBack()
-    }
-}
-
-@Composable
 fun Home() {
     val shape = CircleShape
     var enabled = true
