@@ -13,7 +13,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -37,9 +36,26 @@ class RadhikapurActivity : ComponentActivity() {
 }
 
 @Composable
+fun RdpTimetable() {
+    Column(modifier = Modifier
+        .fillMaxWidth()
+        .padding(10.dp) ,
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally) {
+        Text("Radhikapur - Katihar Passenger: 4:45 am")
+        Text("Radhikapur - Howrah Jn Kulik Express: 5:45 am")
+        Text("Radhikapur - Siliguri DEMU: 6:15 am")
+        Text("Radhikapur - Katihar Passenger: 10:30 am")
+        Text("Radhikapur - Telta DEMU: 1:00 pm")
+        Text("Radhikapur - Katihar Passenger: 6:30 pm")
+        Text("Radhikapur - Kolkata Express: 10:30 am")
+    }
+}
+
+@Composable
 fun Greeting(name: String) {
     Column(
-        modifier = Modifier.fillMaxWidth() ,
+        modifier = Modifier.fillMaxWidth().padding(10.dp) ,
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
         Image(
@@ -50,13 +66,8 @@ fun Greeting(name: String) {
             .padding(10.dp)
         )
 
-        Text("Radhikapur - Katihar Passenger: 4:45 am")
-        Text("Radhikapur - Howrah Jn Kulik Express: 5:45 am")
-        Text("Radhikapur - Siliguri DEMU: 6:15 am")
-        Text("Radhikapur - Katihar Passenger: 10:30 am")
-        Text("Radhikapur - Telta DEMU: 1:00 pm")
-        Text("Radhikapur - Katihar Passenger: 6:30 pm")
-        Text("Radhikapur - Kolkata Express: 10:30 am")
+        Divider()
+        RdpTimetable()
 
         Divider()
         Text("For outsiders new to radhikapur, there are hotels in kaliyaganj where you can stay")
