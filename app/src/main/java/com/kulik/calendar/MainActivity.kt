@@ -125,6 +125,19 @@ fun Home() {
                     )
                 },
         )
+
+        Text(text = "April to May: বৈশাখ")
+        Text(text = "May to June: জ্যৈষ্ঠ")
+        Text(text = "June to July: আষাঢ়")
+        Text(text = "July to August: শ্রাবণ")
+        Text(text = "August to September: ভাদ্র")
+        Text(text = "September to October: আশ্বিন")
+        Text(text = "October to November: কার্তিক")
+        Text(text = "November to December: অগ্রহায়ণ")
+        Text(text = "December to January: পৌষ")
+        Text(text = "January to February: মাঘ")
+        Text(text = "February to March: ফাল্গুন")
+        Text(text = "March to April: চৈত্র")
         
         Text(text = "Nearest major stations are Barsoi and Katihar Jn where all kinds of trains are available. Even Vande Bharat Express!")
     }
