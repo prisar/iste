@@ -88,10 +88,29 @@ fun Home() {
                     enabled = false
                     // onCLick()
                     context.startActivity(
-                        Intent(context, CalendarActivity::class.java).putExtra(
-                            "url",
-                            "https://agrohikulik.web.app/raiganj_06/basudebpur_115/MouzaMap.html"
-                        )
+                        Intent(context, CalendarActivity::class.java)
+                    )
+                },
+        )
+
+        Text(
+            text = "Upcoming Projects",
+            style = TextStyle(
+                color = Black,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            ),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+                .border(2.dp, Black, shape)
+                .background(Teal200, shape)
+                .padding(16.dp)
+                .clickable(enabled = enabled) {
+                    enabled = false
+                    // onCLick()
+                    context.startActivity(
+                        Intent(context, ProjectActivity::class.java)
                     )
                 },
         )
@@ -113,10 +132,7 @@ fun Home() {
                     enabled = false
                     // onCLick()
                     context.startActivity(
-                        Intent(context, RadhikapurActivity::class.java).putExtra(
-                            "url",
-                            "https://agrohikulik.web.app/raiganj_06/basudebpur_115/MouzaMap.html"
-                        )
+                        Intent(context, RadhikapurActivity::class.java)
                     )
                 },
         )
