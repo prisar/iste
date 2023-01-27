@@ -52,5 +52,41 @@ fun UpcomingProjects() {
         
         Divider()
         Text(text = "Radhikapur station upgrade. Parking, canteen and platform facilities will be improved.")
+
+        Divider()
+        Text(text = "Gourakhpur - Siliguri Expressway (4/6 Lane). Estimated completion date 2028")
+
+        Divider()
+        Text(text = "NJP - Siliguri EMU")
+
+        Divider()
+        Text(text = "Balurghat airport runway expansion")
+
+        Divider()
+        Text(text = "Hili - balurghat railway link. Estimated completion date 2024")
+
+        Divider()
+        Text(text = "Buniyadpur - Kaliyaganj railway link")
+
+        Divider()
+        Text(text = "Raiganj - dalkhola railway link")
+
+        Divider()
+        Text(text = "Siliguri outer ring road")
+
+        Divider()
+        Text(text = "Sevok - rangpo railway link")
+
+        Divider()
+        Text(text = "Sevok coronation bridge")
+
+        Divider()
+        Text(text = "Radhikapur - birol land port road connectivity")
+
+        Divider()
+        Text(text = "Dalimgaon or Kaliyaganj station rake point")
+
+        Divider()
+        Text(text = "Raiganj industrial cluster for SME")
     }
 }
