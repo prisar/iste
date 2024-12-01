@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace 'com.kulik.calendar'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.kulik.calendar"
         minSdk 24
-        targetSdk 33
-        versionCode 101
-        versionName "1.3.101"
+        targetSdk 34
+        versionCode 116
+        versionName "1.4.116"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
